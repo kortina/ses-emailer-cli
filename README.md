@@ -1,6 +1,8 @@
 # ses-emailer-cli
 
-Simple command line script for sending emails from the command line.
+Simple command line script for sending emails from the command line. Works with Alfred.
+
+![screenshot](https://raw.githubusercontent.com/kortina/ses-emailer-cli/master/screnshot.png)
 
 ## Dependencies
 
