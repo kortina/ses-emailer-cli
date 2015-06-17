@@ -18,6 +18,7 @@ Simple command line script for sending emails from the command line. Works with 
     export NOTE_TO_SELF_FROM=" your from email"
     export NOTE_TO_SELF_TO=" your to email "
     export NOTE_TO_SELF_LOG=" file to log notes sent (set to /dev/null to skip logging)"
+    export NOTE_TO_SELF_DIR=" /path/to/ses-emailer-cli "
 
 I put all of the above in `~/.ses_conf_private` and source from my `~/.bash_profile`
 
