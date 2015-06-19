@@ -24,7 +24,7 @@ def list_verified_email_addresses():
 
 def send_email(sender, subject, body, recipients):
     conn = get_conn()
-    print locals()
+    # print locals()
     conn.send_email(sender, subject, body, recipients)
 
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     parser.add_argument('--body', dest="body", type=str)
     parser.add_argument('--to', dest="to", type=str)
     args = parser.parse_args()
-    print args
+    # print args
     command = args.command[0]
     if command == "verify_email_address":
         verify_email_address(args.email)
