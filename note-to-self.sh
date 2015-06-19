@@ -12,4 +12,4 @@ touch $NOTE_TO_SELF_LOG
 echo -e "$SUBJECT" >> $NOTE_TO_SELF_LOG
 cd "$( dirname "${BASH_SOURCE[0]}" )" # change to cwd
 python ses.py send_email --sender="$NOTE_TO_SELF_FROM"  --to="$NOTE_TO_SELF_TO" --subject="$SUBJECT" --body=" "
-echo -e "To: $NOTE_TO_SELF_TO    $SUBJECT"
+echo -e "To: $NOTE_TO_SELF_TO\n$SUBJECT"
