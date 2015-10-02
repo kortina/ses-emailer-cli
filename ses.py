@@ -25,6 +25,8 @@ def list_verified_email_addresses():
 def send_email(sender, subject, body, recipients):
     conn = get_conn()
     # print locals()
+    subject = subject.replace("\n", " ")
+    subject = subject.replace("\r", " ")
     conn.send_email(sender, subject, body, recipients)
 
 
