@@ -12,14 +12,14 @@ def get_conn():
 
 
 def verify_email_address(email):
-    print "Verifying {0}".format(args.email)
+    print("Verifying {0}".format(args.email))
     conn = get_conn()
-    print conn.verify_email_address(email)
+    print(conn.verify_email_address(email))
 
 
 def list_verified_email_addresses():
     conn = get_conn()
-    print conn.list_verified_email_addresses()
+    print(conn.list_verified_email_addresses())
 
 
 def send_email(sender, subject, body, recipients):
@@ -52,5 +52,5 @@ if __name__ == "__main__":
                    body=args.body,
                    recipients=[args.to])
     else:
-        print args
+        print(args)
         raise ValueError("Unkown command.")
